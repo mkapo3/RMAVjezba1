@@ -10,6 +10,7 @@
         android:id="@+id/editText1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:translationY="50dp"
         android:hint="Unesi tekst">
     </EditText>
 
@@ -17,8 +18,9 @@
         android:id="@+id/textView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:translationY="300dp"
-        android:text="Uneseni tekst"/>
+        android:translationY="150dp"
+        android:text="Uneseni tekst"
+        android:layout_below = "@+id/button1"/>
 
     <Button
         android:id="@+id/button1"
@@ -26,7 +28,40 @@
         android:layout_height="wrap_content"
         android:text="Prikazi"
         android:translationX="150dp"
-        android:translationY="150dp"/>
+        android:translationY="75dp"
+        android:layout_below = "@+id/editText1"/>
+
+    <CheckBox
+        android:id="@+id/checkbox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:text="Januar"
+        android:translationY="200dp"></CheckBox>
+
+    <CheckBox
+        android:id="@+id/checkbox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:text="Februar"
+        android:translationY="225dp"></CheckBox>
+    <CheckBox
+        android:id="@+id/checkbox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationY="250dp"
+        android:text="Mart"
+        android:layout_below = "@+id/textView2">
+    </CheckBox>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationY="150dp"
+        android:text="Izabrani mjesec"
+        android:layout_below = "@+id/textView1"/>
 
 
 </RelativeLayout>

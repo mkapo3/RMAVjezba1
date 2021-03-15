@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         val editText = findViewById<EditText>(R.id.editText1);
         val textView = findViewById<TextView>(R.id.textView1);
         val message = editText.text.toString();
-        Log.v("TESTLOG", message);
+        //Log.v("TESTLOG", message);
         textView.text=message;
     }
 }
